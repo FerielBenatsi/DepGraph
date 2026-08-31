@@ -43,10 +43,10 @@ async function fileExists(path: string): Promise<boolean> {
  */
 
 export async function resolveToFile(basePath: string): Promise<string | null> {
-
+ const stripped = basePath.replace(/\.(js|jsx|mjs|cjs|ts|tsx)$/, '');
     // cas 1: basepath + extension 
     for(const ext of EXTENSIONS_TO_TRY){
-        const condidate = normalize(basePath + ext);
+        const condidate = normalize(stripped + ext);
         if(await fileExists(condidate)){
             return condidate;
         }
@@ -56,7 +56,7 @@ export async function resolveToFile(basePath: string): Promise<string | null> {
 
     //cas2 : baseapath + /index + extension
     for(const ext of EXTENSIONS_TO_TRY){
-        const condidate = normalize(join(basePath, 'index' + ext));
+        const condidate = join(stripped, 'index' + ext);
         if(await fileExists(condidate)){
             return condidate;
         }
