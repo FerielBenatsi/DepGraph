@@ -14,3 +14,10 @@ export interface Graph {
     adj: NodeId[][];              
     reverseAdj: NodeId[][];       
 }
+
+export interface ModuleMetrics {
+    path: string;
+    fanIn: number;  
+    fanOut: number; 
+  
+}
