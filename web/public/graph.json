@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "path": "src\\algorithms\\reachability.ts",
+      "fanIn": 0,
+      "fanOut": 1
+    },
+    {
+      "id": 1,
+      "path": "src\\types.ts",
+      "fanIn": 9,
+      "fanOut": 0
+    },
+    {
+      "id": 2,
+      "path": "src\\algorithms\\tarjan.ts",
+      "fanIn": 1,
+      "fanOut": 1
+    },
+    {
+      "id": 3,
+      "path": "src\\analysis\\analyze.ts",
+      "fanIn": 1,
+      "fanOut": 5
+    },
+    {
+      "id": 4,
+      "path": "src\\graph\\extractor.ts",
+      "fanIn": 2,
+      "fanOut": 4
+    },
+    {
+      "id": 5,
+      "path": "src\\graph\\builder.ts",
+      "fanIn": 1,
+      "fanOut": 2
+    },
+    {
+      "id": 6,
+      "path": "src\\metrics\\metrics.ts",
+      "fanIn": 2,
+      "fanOut": 1
+    },
+    {
+      "id": 7,
+      "path": "src\\cli\\index.ts",
+      "fanIn": 0,
+      "fanOut": 3
+    },
+    {
+      "id": 8,
+      "path": "src\\report\\report.ts",
+      "fanIn": 1,
+      "fanOut": 1
+    },
+    {
+      "id": 9,
+      "path": "src\\report\\export.ts",
+      "fanIn": 1,
+      "fanOut": 2
+    },
+    {
+      "id": 10,
+      "path": "src\\scanner\\scanner.ts",
+      "fanIn": 1,
+      "fanOut": 1
+    },
+    {
+      "id": 11,
+      "path": "src\\parser\\parser.ts",
+      "fanIn": 1,
+      "fanOut": 0
+    },
+    {
+      "id": 12,
+      "path": "src\\resolver\\resolver.ts",
+      "fanIn": 1,
+      "fanOut": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1
+    },
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 4
+    },
+    {
+      "from": 3,
+      "to": 5
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 3,
+      "to": 6
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 10
+    },
+    {
+      "from": 4,
+      "to": 11
+    },
+    {
+      "from": 4,
+      "to": 12
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 3
+    },
+    {
+      "from": 7,
+      "to": 8
+    },
+    {
+      "from": 7,
+      "to": 9
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 6
+    },
+    {
+      "from": 10,
+      "to": 1
+    }
+  ]
+}

@@ -50,8 +50,9 @@ export function buildGraph(dependencies: Dependency[]): Graph {
 
 }
 
-
-
-console.log('NODES  :', graph.nodes);
+/**
+ * 
+ * console.log('NODES  :', graph.nodes);
 console.log('ADJ    :', graph.adj);
 console.log('REVERSE:', graph.reverseAdj);
+*/

@@ -21,3 +21,12 @@ export interface ModuleMetrics {
     fanOut: number; 
   
 }
+export interface AnalysisResult {
+    graph: Graph;
+    fileCount: number;
+    dependencyCount: number;
+    cycles: NodeId[][];         // les SCC de taille > 1
+    hubs: ModuleMetrics[];
+    averageFanIn: number;
+    averageFanOut: number;
+}

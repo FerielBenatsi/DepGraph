@@ -8,8 +8,17 @@ export async function parseImports(filePath: string): Promise<string[]> {
 
 const code = await readFile(filePath, 'utf-8');
 
-const ast = parse(code, {
-    sourceType: 'module'});
+let ast ;
+
+try{
+     ast = parse(code, {
+            sourceType: 'module',
+            ecmaFeatures: { jsx: true },
+        });
+} catch{
+     console.warn(`⚠ Impossible d'analyser ${filePath}, fichier ignoré.`);
+        return []; 
+}
 
 const imports: string[] = [];
 
