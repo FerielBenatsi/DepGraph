@@ -110,7 +110,7 @@ Critical modules:
   ...
 =====================================
 ```
-
+![DepGraph visualization](/screenshot.png)
 ## Limitations
 
 DepGraph is a **static** analyzer, and it is honest about what that means:
