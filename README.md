@@ -111,7 +111,7 @@ Critical modules:
 =====================================
 ```
 
-![DepGraph visualization](/DepGraph/web/public/screenshot.png)
+![DepGraph visualization](/web/public/screenshot.png)
 
 ## Limitations
 
